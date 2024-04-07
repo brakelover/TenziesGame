@@ -93,7 +93,6 @@ function App() {
           return dice.isHeld ? dice : { ...dice, value: Math.ceil(Math.random() * 6) }
         })
       })
-      setCounter(prev => prev + 1);
     }
     // else {
     //   setTenzies(check);
