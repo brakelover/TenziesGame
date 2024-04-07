@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #F6E9DF;
+}
+
+main {
+  width: 511px;
+  height: 517px;
+  background-color: #0A2433;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  text-align: center;
+}
+
+.title h1{
+  margin: 5px auto;
+  font-weight: 900;
+  font-size: 35px;
+}
+
+.instructions{
+  margin: auto;
+  width: 70%;
+  font-size: 20px;
+  color: #676588;
+}
+
+.timer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 10%;
+}
+
+/* content */
+
+.content{
+  background-color: #F5F5F5;
+  width: 90%;
+  height: 85%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.dices{
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  grid-template-rows: repeat(2, 50px);
+  gap: 20px;
+}
+
+.die{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.3);
+  transition: .3s;
+}
+
+.die:hover{
+  transition: .3s;
+  background-color: rgb(227, 207, 207);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.die-num{
+  font-weight: 900;
+}
+
+#roll-btn{
+  background-color: #5035FF;
+  color: white;
+  padding: 15px 40px;
+  cursor: pointer;
+  border-radius: 7px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: .2s;
+}
+
+#roll-btn:active{
+  transition: .2s;
+  background-color: #9183ea;
+  color: rgb(255, 255, 255, .9);
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3);
+}

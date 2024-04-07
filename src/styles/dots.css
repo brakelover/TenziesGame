@@ -1,0 +1,58 @@
+.dot1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot1 .dot{
+    width: 15px;
+    height: 15px;
+    background-color: rgb(156, 69, 69);
+}
+
+.dot, .notDot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    border: none;
+}
+
+.notDot{
+    background-color: transparent;
+}
+
+.dot2, .dot3, .dot4, .dot5, .dot6{
+    display: grid;
+}
+
+.dot2{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+}
+
+.dot3{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2px;
+}
+
+.dot4{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.dot5{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2px;
+}
+
+.dot6{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 6px;
+    row-gap: 2px;
+}
