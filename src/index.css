@@ -87,7 +87,7 @@ main {
   font-weight: 900;
 }
 
-#roll-btn{
+.roll-btn{
   background-color: #5035FF;
   color: white;
   padding: 15px 40px;
@@ -101,7 +101,7 @@ main {
   transition: .2s;
 }
 
-#roll-btn:active{
+.roll-btn:active{
   transition: .2s;
   background-color: #9183ea;
   color: rgb(255, 255, 255, .9);
